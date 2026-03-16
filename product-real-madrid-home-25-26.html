@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real Madrid Home 25/26 · OutJersey</title>
+<meta name="description" content="Catalogo premium OutJersey - maglie calcio 25/26, personalizzabili, consegna 7-9 giorni.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-orb orb-a"></div>
+<div class="bg-orb orb-b"></div>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark"><img src="assets/img/logo-outjersey.png" alt="OutJersey logo"></span>
+    <span class="brand-copy"><small>FOOTBALL CATALOG</small><strong>OutJersey</strong></span>
+  </a>
+  <nav class="nav-desktop">
+    <a href="index.html">Home</a>
+    <a href="catalogo.html">Catalogo</a>
+    <a href="recensioni.html">Recensioni</a>
+    <a href="chi-siamo.html">Chi siamo</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="come-ordinare.html">Come ordinare</a>
+  </nav>
+  <div class="header-right">
+    <button class="btn ghost telegram-pill" type="button" onclick="OJ.openContactModal()">Contatta</button>
+    <button class="menu-btn" type="button" aria-label="Apri menu" onclick="OJ.toggleMenu()">☰</button>
+  </div>
+</header>
+<div class="mobile-backdrop" onclick="OJ.closeMenu()"></div>
+<aside class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="catalogo.html">Catalogo</a>
+  <a href="recensioni.html">Recensioni</a>
+  <a href="chi-siamo.html">Chi siamo</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="come-ordinare.html">Come ordinare</a>
+  <a href="https://t.me/outjersey" target="_blank" rel="noopener">Telegram</a>
+  <a href="https://instagram.com/outjersey_" target="_blank" rel="noopener">Instagram</a>
+</aside>
+<main><section class="product-page"><div class="product-gallery reveal"><img src="assets/img/real-madrid-home-25-26.jpg" alt="Real Madrid Home 25/26"></div><div class="product-info reveal"><span class="eyebrow">La Liga</span><h1>Real Madrid Home 25/26</h1><p>Real Madrid • 35€ • Taglie S - XXL</p><div class="spec-grid"><div class="spec"><strong>Taglie</strong><span>S - XXL</span></div><div class="spec"><strong>Personalizzazione</strong><span>Nome e numero disponibili</span></div><div class="spec"><strong>Consegna</strong><span>7-9 giorni</span></div><div class="spec"><strong>Ordine</strong><span>Telegram o Instagram</span></div></div><div class="product-actions"><button class="btn primary" type="button" onclick="OJ.openOrderModal('Real Madrid Home 25/26')">Ordina</button><a class="btn ghost" href="catalogo.html">Torna al catalogo</a></div><div class="side-grid"><article class="about-card"><strong>Qualità premium</strong><p>Visual pulito e impatto forte per valorizzare la maglia.</p></article><article class="about-card"><strong>Ordine veloce</strong><p>Messaggio già pronto da copiare e inviare in chat.</p></article><article class="about-card"><strong>Mobile first</strong><p>Ottimizzato per smartphone, Instagram e traffico social.</p></article><article class="about-card"><strong>Scheda chiara</strong><p>Niente caos: immagine grande, info giuste e CTA evidenti.</p></article></div></div></section></main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col brand-col">
+      <h3>OutJersey</h3>
+      <p class="footer-tagline">Maglie premium. Catalogo pulito. Ordine diretto.</p>
+      <p>Un sito pensato per mobile, Instagram e Telegram. Più chiaro, più forte, più facile da usare.</p>
+      <div class="footer-badges">
+        <span>7-9 giorni</span><span>Taglie S - XXL</span><span>Personalizzabile</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <a href="catalogo.html">Catalogo</a>
+      <a href="recensioni.html">Recensioni</a>
+      <a href="come-ordinare.html">Come ordinare</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+    <div class="footer-col">
+      <h4>Ordina in chat</h4>
+      <a href="https://t.me/outjersey" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://instagram.com/outjersey_" target="_blank" rel="noopener">Instagram</a>
+      <p>Catalogo 25/26 • Inter, Milan, Napoli, Juve, Roma e top europee.</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© OutJersey</span><span>Premium football catalog</span></div>
+</footer>
+
+<div id="order-modal" class="order-modal" aria-hidden="true">
+  <div class="order-dialog">
+    <button class="modal-close" type="button" onclick="OJ.closeOrderModal()">×</button>
+    <p class="modal-kicker">OUTJERSEY</p>
+    <h3 id="modal-title">Ordina la maglia</h3>
+    <div class="modal-box">
+      <small>Messaggio rapido</small>
+      <textarea id="modal-template" readonly></textarea>
+      <button class="btn ghost copy-btn" type="button" onclick="OJ.copyTemplate()">Copia template</button>
+    </div>
+    <div class="channel-list">
+      <a class="channel-card telegram" href="https://t.me/outjersey" target="_blank" rel="noopener">
+        <span class="channel-icon">✈</span>
+        <span><strong>Continua su Telegram</strong><small>Il modo più rapido per chiudere l’ordine.</small></span>
+      </a>
+      <a class="channel-card instagram" href="https://instagram.com/outjersey_" target="_blank" rel="noopener">
+        <span class="channel-icon">◎</span>
+        <span><strong>Continua su Instagram</strong><small>Perfetto se preferisci ordinare in direct.</small></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/site.js"></script>
+
+<div id="contact-modal" class="order-modal" aria-hidden="true">
+  <div class="order-dialog contact-dialog">
+    <button class="modal-close" type="button" onclick="OJ.closeContactModal()">×</button>
+    <p class="modal-kicker">OUTJERSEY</p>
+    <h3>Contattaci</h3>
+    <p class="contact-lead">Scegli dove vuoi scriverci. Telegram è più rapido, Instagram è perfetto per chi arriva dai social.</p>
+    <div class="channel-list">
+      <a class="channel-card telegram" href="https://t.me/outjersey" target="_blank" rel="noopener">
+        <span class="channel-icon">✈</span>
+        <span><strong>Apri Telegram</strong><small>Ordine rapido e risposta diretta.</small></span>
+      </a>
+      <a class="channel-card instagram" href="https://instagram.com/outjersey_" target="_blank" rel="noopener">
+        <span class="channel-icon">◎</span>
+        <span><strong>Apri Instagram</strong><small>Perfetto per ordinare in direct.</small></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

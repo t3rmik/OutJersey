@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ligue 1 · OutJersey</title>
+<meta name="description" content="Catalogo premium OutJersey - maglie calcio 25/26, personalizzabili, consegna 7-9 giorni.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-orb orb-a"></div>
+<div class="bg-orb orb-b"></div>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark"><img src="assets/img/logo-outjersey.png" alt="OutJersey logo"></span>
+    <span class="brand-copy"><small>FOOTBALL CATALOG</small><strong>OutJersey</strong></span>
+  </a>
+  <nav class="nav-desktop">
+    <a href="index.html">Home</a>
+    <a href="catalogo.html">Catalogo</a>
+    <a href="recensioni.html">Recensioni</a>
+    <a href="chi-siamo.html">Chi siamo</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="come-ordinare.html">Come ordinare</a>
+  </nav>
+  <div class="header-right">
+    <button class="btn ghost telegram-pill" type="button" onclick="OJ.openContactModal()">Contatta</button>
+    <button class="menu-btn" type="button" aria-label="Apri menu" onclick="OJ.toggleMenu()">☰</button>
+  </div>
+</header>
+<div class="mobile-backdrop" onclick="OJ.closeMenu()"></div>
+<aside class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="catalogo.html">Catalogo</a>
+  <a href="recensioni.html">Recensioni</a>
+  <a href="chi-siamo.html">Chi siamo</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="come-ordinare.html">Come ordinare</a>
+  <a href="https://t.me/outjersey" target="_blank" rel="noopener">Telegram</a>
+  <a href="https://instagram.com/outjersey_" target="_blank" rel="noopener">Instagram</a>
+</aside>
+<main><section class="section"><div class="section-head"><span class="eyebrow">Ligue 1</span><h2>Ligue 1</h2><p>Una pagina dedicata alla tua lega, con cards statiche e swipe naturale su mobile.</p></div><div class="product-grid">
+<article class="product-card reveal" data-league="Ligue 1" data-search="marseille ligue 1">
+  <a class="product-media" href="product-marseille-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/marseille-home-25-26.jpg" alt="Marseille Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Ligue 1</span><span>S - XXL</span></div>
+  <h3>Marseille Home 25/26</h3>
+  <div class="product-meta"><span>Marseille</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-marseille-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Marseille Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Ligue 1" data-search="psg ligue 1">
+  <a class="product-media" href="product-psg-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/psg-home-25-26.jpg" alt="PSG Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Ligue 1</span><span>S - XXL</span></div>
+  <h3>PSG Home 25/26</h3>
+  <div class="product-meta"><span>PSG</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-psg-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('PSG Home 25/26')">Ordina</button>
+  </div>
+</article></div></section></main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col brand-col">
+      <h3>OutJersey</h3>
+      <p class="footer-tagline">Maglie premium. Catalogo pulito. Ordine diretto.</p>
+      <p>Un sito pensato per mobile, Instagram e Telegram. Più chiaro, più forte, più facile da usare.</p>
+      <div class="footer-badges">
+        <span>7-9 giorni</span><span>Taglie S - XXL</span><span>Personalizzabile</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <a href="catalogo.html">Catalogo</a>
+      <a href="recensioni.html">Recensioni</a>
+      <a href="come-ordinare.html">Come ordinare</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+    <div class="footer-col">
+      <h4>Ordina in chat</h4>
+      <a href="https://t.me/outjersey" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://instagram.com/outjersey_" target="_blank" rel="noopener">Instagram</a>
+      <p>Catalogo 25/26 • Inter, Milan, Napoli, Juve, Roma e top europee.</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© OutJersey</span><span>Premium football catalog</span></div>
+</footer>
+
+<div id="order-modal" class="order-modal" aria-hidden="true">
+  <div class="order-dialog">
+    <button class="modal-close" type="button" onclick="OJ.closeOrderModal()">×</button>
+    <p class="modal-kicker">OUTJERSEY</p>
+    <h3 id="modal-title">Ordina la maglia</h3>
+    <div class="modal-box">
+      <small>Messaggio rapido</small>
+      <textarea id="modal-template" readonly></textarea>
+      <button class="btn ghost copy-btn" type="button" onclick="OJ.copyTemplate()">Copia template</button>
+    </div>
+    <div class="channel-list">
+      <a class="channel-card telegram" href="https://t.me/outjersey" target="_blank" rel="noopener">
+        <span class="channel-icon">✈</span>
+        <span><strong>Continua su Telegram</strong><small>Il modo più rapido per chiudere l’ordine.</small></span>
+      </a>
+      <a class="channel-card instagram" href="https://instagram.com/outjersey_" target="_blank" rel="noopener">
+        <span class="channel-icon">◎</span>
+        <span><strong>Continua su Instagram</strong><small>Perfetto se preferisci ordinare in direct.</small></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/site.js"></script>
+
+<div id="contact-modal" class="order-modal" aria-hidden="true">
+  <div class="order-dialog contact-dialog">
+    <button class="modal-close" type="button" onclick="OJ.closeContactModal()">×</button>
+    <p class="modal-kicker">OUTJERSEY</p>
+    <h3>Contattaci</h3>
+    <p class="contact-lead">Scegli dove vuoi scriverci. Telegram è più rapido, Instagram è perfetto per chi arriva dai social.</p>
+    <div class="channel-list">
+      <a class="channel-card telegram" href="https://t.me/outjersey" target="_blank" rel="noopener">
+        <span class="channel-icon">✈</span>
+        <span><strong>Apri Telegram</strong><small>Ordine rapido e risposta diretta.</small></span>
+      </a>
+      <a class="channel-card instagram" href="https://instagram.com/outjersey_" target="_blank" rel="noopener">
+        <span class="channel-icon">◎</span>
+        <span><strong>Apri Instagram</strong><small>Perfetto per ordinare in direct.</small></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

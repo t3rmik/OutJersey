@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catalogo · OutJersey</title>
+<meta name="description" content="Catalogo premium OutJersey - maglie calcio 25/26, personalizzabili, consegna 7-9 giorni.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-orb orb-a"></div>
+<div class="bg-orb orb-b"></div>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand-mark"><img src="assets/img/logo-outjersey.png" alt="OutJersey logo"></span>
+    <span class="brand-copy"><small>FOOTBALL CATALOG</small><strong>OutJersey</strong></span>
+  </a>
+  <nav class="nav-desktop">
+    <a href="index.html">Home</a>
+    <a href="catalogo.html">Catalogo</a>
+    <a href="recensioni.html">Recensioni</a>
+    <a href="chi-siamo.html">Chi siamo</a>
+    <a href="contatti.html">Contatti</a>
+    <a href="come-ordinare.html">Come ordinare</a>
+  </nav>
+  <div class="header-right">
+    <button class="btn ghost telegram-pill" type="button" onclick="OJ.openContactModal()">Contatta</button>
+    <button class="menu-btn" type="button" aria-label="Apri menu" onclick="OJ.toggleMenu()">☰</button>
+  </div>
+</header>
+<div class="mobile-backdrop" onclick="OJ.closeMenu()"></div>
+<aside class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="catalogo.html">Catalogo</a>
+  <a href="recensioni.html">Recensioni</a>
+  <a href="chi-siamo.html">Chi siamo</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="come-ordinare.html">Come ordinare</a>
+  <a href="https://t.me/outjersey" target="_blank" rel="noopener">Telegram</a>
+  <a href="https://instagram.com/outjersey_" target="_blank" rel="noopener">Instagram</a>
+</aside>
+
+<main><section class="section"><div class="section-head"><span class="eyebrow">Catalogo</span><h2>Tutte le maglie 25/26.</h2><p>Ricerca rapida, filtri semplici e cards statiche che compaiono anche se GitHub è lento.</p></div>
+<div class="catalog-tools"><label class="search"><input id="catalog-search" type="text" placeholder="Cerca squadra o campionato"></label><div id="catalog-count" class="catalog-count"></div></div>
+<div class="filter-bar">
+<button class="filter-btn active" type="button" data-filter="all">Tutte</button>
+<button class="filter-btn" type="button" data-filter="Serie A">Serie A</button>
+<button class="filter-btn" type="button" data-filter="Premier League">Premier</button>
+<button class="filter-btn" type="button" data-filter="La Liga">La Liga</button>
+<button class="filter-btn" type="button" data-filter="Bundesliga">Bundesliga</button>
+<button class="filter-btn" type="button" data-filter="Ligue 1">Ligue 1</button>
+<button class="filter-btn" type="button" data-filter="Nazionali">Nazionali</button>
+</div><div class="product-grid">
+<article class="product-card reveal" data-league="Serie A" data-search="ac milan serie a">
+  <a class="product-media" href="product-ac-milan-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/inter-home-25-26.jpg" alt="AC Milan Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>AC Milan Home 25/26</h3>
+  <div class="product-meta"><span>AC Milan</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-ac-milan-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('AC Milan Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="atalanta serie a">
+  <a class="product-media" href="product-atalanta-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/atalanta-home-25-26.jpg" alt="Atalanta Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Atalanta Home 25/26</h3>
+  <div class="product-meta"><span>Atalanta</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-atalanta-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Atalanta Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="bologna serie a">
+  <a class="product-media" href="product-bologna-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/bologna-home-25-26.jpg" alt="Bologna Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Bologna Home 25/26</h3>
+  <div class="product-meta"><span>Bologna</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-bologna-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Bologna Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="como serie a">
+  <a class="product-media" href="product-como-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/como-home-25-26.jpg" alt="Como Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Como Home 25/26</h3>
+  <div class="product-meta"><span>Como</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-como-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Como Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="fiorentina serie a">
+  <a class="product-media" href="product-fiorentina-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/fiorentina-home-25-26.jpg" alt="Fiorentina Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Fiorentina Home 25/26</h3>
+  <div class="product-meta"><span>Fiorentina</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-fiorentina-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Fiorentina Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="inter serie a">
+  <a class="product-media" href="product-inter-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/roma-home-25-26.jpg" alt="Inter Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Inter Home 25/26</h3>
+  <div class="product-meta"><span>Inter</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-inter-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Inter Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="juventus serie a">
+  <a class="product-media" href="product-juventus-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/napoli-home-25-26.jpg" alt="Juventus Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Juventus Home 25/26</h3>
+  <div class="product-meta"><span>Juventus</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-juventus-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Juventus Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="lazio serie a">
+  <a class="product-media" href="product-lazio-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/lazio-home-25-26.jpg" alt="Lazio Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Lazio Home 25/26</h3>
+  <div class="product-meta"><span>Lazio</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-lazio-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Lazio Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="napoli serie a">
+  <a class="product-media" href="product-napoli-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/ac-milan-home-25-26.jpg" alt="Napoli Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Napoli Home 25/26</h3>
+  <div class="product-meta"><span>Napoli</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-napoli-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Napoli Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="roma serie a">
+  <a class="product-media" href="product-roma-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/juventus-home-25-26.jpg" alt="Roma Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Roma Home 25/26</h3>
+  <div class="product-meta"><span>Roma</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-roma-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Roma Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="sassuolo serie a">
+  <a class="product-media" href="product-sassuolo-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/sassuolo-home-25-26.jpg" alt="Sassuolo Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Sassuolo Home 25/26</h3>
+  <div class="product-meta"><span>Sassuolo</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-sassuolo-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Sassuolo Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Serie A" data-search="torino serie a">
+  <a class="product-media" href="product-torino-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/torino-home-25-26.jpg" alt="Torino Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Serie A</span><span>S - XXL</span></div>
+  <h3>Torino Home 25/26</h3>
+  <div class="product-meta"><span>Torino</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-torino-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Torino Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Premier League" data-search="arsenal premier league">
+  <a class="product-media" href="product-arsenal-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/arsenal-home-25-26.jpg" alt="Arsenal Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Premier League</span><span>S - XXL</span></div>
+  <h3>Arsenal Home 25/26</h3>
+  <div class="product-meta"><span>Arsenal</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-arsenal-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Arsenal Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Premier League" data-search="aston villa premier league">
+  <a class="product-media" href="product-aston-villa-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/aston-villa-home-25-26.jpg" alt="Aston Villa Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Premier League</span><span>S - XXL</span></div>
+  <h3>Aston Villa Home 25/26</h3>
+  <div class="product-meta"><span>Aston Villa</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-aston-villa-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Aston Villa Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Premier League" data-search="chelsea premier league">
+  <a class="product-media" href="product-chelsea-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/chelsea-home-25-26.jpg" alt="Chelsea Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Premier League</span><span>S - XXL</span></div>
+  <h3>Chelsea Home 25/26</h3>
+  <div class="product-meta"><span>Chelsea</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-chelsea-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Chelsea Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Premier League" data-search="liverpool premier league">
+  <a class="product-media" href="product-liverpool-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/liverpool-home-25-26.jpg" alt="Liverpool Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Premier League</span><span>S - XXL</span></div>
+  <h3>Liverpool Home 25/26</h3>
+  <div class="product-meta"><span>Liverpool</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-liverpool-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Liverpool Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Premier League" data-search="manchester city premier league">
+  <a class="product-media" href="product-manchester-city-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/manchester-city-home-25-26.jpg" alt="Manchester City Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Premier League</span><span>S - XXL</span></div>
+  <h3>Manchester City Home 25/26</h3>
+  <div class="product-meta"><span>Manchester City</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-manchester-city-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Manchester City Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Premier League" data-search="manchester united premier league">
+  <a class="product-media" href="product-manchester-united-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/manchester-united-home-25-26.jpg" alt="Manchester United Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Premier League</span><span>S - XXL</span></div>
+  <h3>Manchester United Home 25/26</h3>
+  <div class="product-meta"><span>Manchester United</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-manchester-united-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Manchester United Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Premier League" data-search="newcastle premier league">
+  <a class="product-media" href="product-newcastle-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/newcastle-home-25-26.jpg" alt="Newcastle Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Premier League</span><span>S - XXL</span></div>
+  <h3>Newcastle Home 25/26</h3>
+  <div class="product-meta"><span>Newcastle</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-newcastle-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Newcastle Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="La Liga" data-search="atlético madrid la liga">
+  <a class="product-media" href="product-atletico-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/atletico-home-25-26.jpg" alt="Atlético Madrid Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>La Liga</span><span>S - XXL</span></div>
+  <h3>Atlético Madrid Home 25/26</h3>
+  <div class="product-meta"><span>Atlético Madrid</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-atletico-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Atlético Madrid Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="La Liga" data-search="barcelona la liga">
+  <a class="product-media" href="product-barcelona-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/barcelona-home-25-26.jpg" alt="Barcelona Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>La Liga</span><span>S - XXL</span></div>
+  <h3>Barcelona Home 25/26</h3>
+  <div class="product-meta"><span>Barcelona</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-barcelona-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Barcelona Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="La Liga" data-search="real madrid la liga">
+  <a class="product-media" href="product-real-madrid-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/real-madrid-home-25-26.jpg" alt="Real Madrid Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>La Liga</span><span>S - XXL</span></div>
+  <h3>Real Madrid Home 25/26</h3>
+  <div class="product-meta"><span>Real Madrid</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-real-madrid-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Real Madrid Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Bundesliga" data-search="bayer leverkusen bundesliga">
+  <a class="product-media" href="product-leverkusen-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/leverkusen-home-25-26.jpg" alt="Bayer Leverkusen Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Bundesliga</span><span>S - XXL</span></div>
+  <h3>Bayer Leverkusen Home 25/26</h3>
+  <div class="product-meta"><span>Bayer Leverkusen</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-leverkusen-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Bayer Leverkusen Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Bundesliga" data-search="bayern monaco bundesliga">
+  <a class="product-media" href="product-bayern-monaco-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/bayern-monaco-home-25-26.jpg" alt="Bayern Monaco Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Bundesliga</span><span>S - XXL</span></div>
+  <h3>Bayern Monaco Home 25/26</h3>
+  <div class="product-meta"><span>Bayern Monaco</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-bayern-monaco-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Bayern Monaco Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Bundesliga" data-search="borussia dortmund bundesliga">
+  <a class="product-media" href="product-borussia-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/borussia-home-25-26.jpg" alt="Borussia Dortmund Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Bundesliga</span><span>S - XXL</span></div>
+  <h3>Borussia Dortmund Home 25/26</h3>
+  <div class="product-meta"><span>Borussia Dortmund</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-borussia-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Borussia Dortmund Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Ligue 1" data-search="marseille ligue 1">
+  <a class="product-media" href="product-marseille-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/marseille-home-25-26.jpg" alt="Marseille Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Ligue 1</span><span>S - XXL</span></div>
+  <h3>Marseille Home 25/26</h3>
+  <div class="product-meta"><span>Marseille</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-marseille-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Marseille Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Ligue 1" data-search="psg ligue 1">
+  <a class="product-media" href="product-psg-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/psg-home-25-26.jpg" alt="PSG Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Ligue 1</span><span>S - XXL</span></div>
+  <h3>PSG Home 25/26</h3>
+  <div class="product-meta"><span>PSG</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-psg-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('PSG Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Nazionali" data-search="argentina nazionali">
+  <a class="product-media" href="product-argentina-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/argentina-home-25-26.jpg" alt="Argentina Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Nazionali</span><span>S - XXL</span></div>
+  <h3>Argentina Home 25/26</h3>
+  <div class="product-meta"><span>Argentina</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-argentina-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Argentina Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Nazionali" data-search="brazil nazionali">
+  <a class="product-media" href="product-brazil-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/brazil-home-25-26.jpg" alt="Brazil Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Nazionali</span><span>S - XXL</span></div>
+  <h3>Brazil Home 25/26</h3>
+  <div class="product-meta"><span>Brazil</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-brazil-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Brazil Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Nazionali" data-search="england nazionali">
+  <a class="product-media" href="product-england-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/england-home-25-26.jpg" alt="England Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Nazionali</span><span>S - XXL</span></div>
+  <h3>England Home 25/26</h3>
+  <div class="product-meta"><span>England</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-england-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('England Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Nazionali" data-search="germany nazionali">
+  <a class="product-media" href="product-germany-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/germany-home-25-26.jpg" alt="Germany Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Nazionali</span><span>S - XXL</span></div>
+  <h3>Germany Home 25/26</h3>
+  <div class="product-meta"><span>Germany</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-germany-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Germany Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Nazionali" data-search="italia nazionali">
+  <a class="product-media" href="product-italia-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/italia-home-25-26.jpg" alt="Italia Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Nazionali</span><span>S - XXL</span></div>
+  <h3>Italia Home 25/26</h3>
+  <div class="product-meta"><span>Italia</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-italia-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Italia Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Nazionali" data-search="portugal nazionali">
+  <a class="product-media" href="product-portugal-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/portugal-home-25-26.jpg" alt="Portugal Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Nazionali</span><span>S - XXL</span></div>
+  <h3>Portugal Home 25/26</h3>
+  <div class="product-meta"><span>Portugal</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-portugal-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Portugal Home 25/26')">Ordina</button>
+  </div>
+</article>
+
+<article class="product-card reveal" data-league="Nazionali" data-search="spain nazionali">
+  <a class="product-media" href="product-spain-home-25-26.html">
+    <span class="sale-badge">SALE</span>
+    <img src="assets/img/spain-home-25-26.jpg" alt="Spain Home 25/26" loading="lazy">
+  </a>
+  <div class="product-tags"><span>Nazionali</span><span>S - XXL</span></div>
+  <h3>Spain Home 25/26</h3>
+  <div class="product-meta"><span>Spain</span><strong>35€</strong></div>
+  <div class="product-actions">
+    <a class="btn ghost" href="product-spain-home-25-26.html">Apri scheda</a>
+    <button class="btn primary" type="button" onclick="OJ.openOrderModal('Spain Home 25/26')">Ordina</button>
+  </div>
+</article></div></section></main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col brand-col">
+      <h3>OutJersey</h3>
+      <p class="footer-tagline">Maglie premium. Catalogo pulito. Ordine diretto.</p>
+      <p>Un sito pensato per mobile, Instagram e Telegram. Più chiaro, più forte, più facile da usare.</p>
+      <div class="footer-badges">
+        <span>7-9 giorni</span><span>Taglie S - XXL</span><span>Personalizzabile</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <a href="catalogo.html">Catalogo</a>
+      <a href="recensioni.html">Recensioni</a>
+      <a href="come-ordinare.html">Come ordinare</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+    <div class="footer-col">
+      <h4>Ordina in chat</h4>
+      <a href="https://t.me/outjersey" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://instagram.com/outjersey_" target="_blank" rel="noopener">Instagram</a>
+      <p>Catalogo 25/26 • Inter, Milan, Napoli, Juve, Roma e top europee.</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© OutJersey</span><span>Premium football catalog</span></div>
+</footer>
+
+<div id="order-modal" class="order-modal" aria-hidden="true">
+  <div class="order-dialog">
+    <button class="modal-close" type="button" onclick="OJ.closeOrderModal()">×</button>
+    <p class="modal-kicker">OUTJERSEY</p>
+    <h3 id="modal-title">Ordina la maglia</h3>
+    <div class="modal-box">
+      <small>Messaggio rapido</small>
+      <textarea id="modal-template" readonly></textarea>
+      <button class="btn ghost copy-btn" type="button" onclick="OJ.copyTemplate()">Copia template</button>
+    </div>
+    <div class="channel-list">
+      <a class="channel-card telegram" href="https://t.me/outjersey" target="_blank" rel="noopener">
+        <span class="channel-icon">✈</span>
+        <span><strong>Continua su Telegram</strong><small>Il modo più rapido per chiudere l’ordine.</small></span>
+      </a>
+      <a class="channel-card instagram" href="https://instagram.com/outjersey_" target="_blank" rel="noopener">
+        <span class="channel-icon">◎</span>
+        <span><strong>Continua su Instagram</strong><small>Perfetto se preferisci ordinare in direct.</small></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/site.js"></script>
+
+<div id="contact-modal" class="order-modal" aria-hidden="true">
+  <div class="order-dialog contact-dialog">
+    <button class="modal-close" type="button" onclick="OJ.closeContactModal()">×</button>
+    <p class="modal-kicker">OUTJERSEY</p>
+    <h3>Contattaci</h3>
+    <p class="contact-lead">Scegli dove vuoi scriverci. Telegram è più rapido, Instagram è perfetto per chi arriva dai social.</p>
+    <div class="channel-list">
+      <a class="channel-card telegram" href="https://t.me/outjersey" target="_blank" rel="noopener">
+        <span class="channel-icon">✈</span>
+        <span><strong>Apri Telegram</strong><small>Ordine rapido e risposta diretta.</small></span>
+      </a>
+      <a class="channel-card instagram" href="https://instagram.com/outjersey_" target="_blank" rel="noopener">
+        <span class="channel-icon">◎</span>
+        <span><strong>Apri Instagram</strong><small>Perfetto per ordinare in direct.</small></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
